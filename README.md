@@ -1,6 +1,6 @@
 # ANSI Text Formatter
 
-This repository contains Python, Ocaml, C and Rust libraries for text formatting
+This repository contains Python, Ocaml, C/C++ libraries for text formatting
 using ANSI escape sequences.
 It supports basic color, 8-bit and RGB color models as well as various font effects.
 
@@ -19,7 +19,7 @@ It supports basic color, 8-bit and RGB color models as well as various font effe
     <tr>
         <td style="font-size: 20px; font-weight: bold">  Code </td>
         <td style="font-size: 20px; font-weight: bold">  Color </td>
-        <td style="font-size: 20px; font-weight: bold">  Python / Rust/ C </td>
+        <td style="font-size: 20px; font-weight: bold">  Python / C </td>
         <td style="font-size: 20px; font-weight: bold">  Ocaml </td>
     </tr>
     <!-- foreground -->
@@ -128,7 +128,7 @@ It supports basic color, 8-bit and RGB color models as well as various font effe
   - **Foreground**: \033[38;5<color_code>m
   - **Background**: \033[48;5<color_code>m
 - **Color codes**
-  | Code range | Meaning | Python / C / Rust | Ocaml |
+  | Code range | Meaning | Python / C | Ocaml |
   |------------|------------------|-------|-------|
   | 0 - 15 | Basic colors | `(fg / bg)_basic_color(\<color>, "text")` | `(fg / bg)_basic_color \<color> "text"`
   | 16 - 231 | 6 x 6 x 6 RGB cube | `(fg / bg)_rgb6(<0-5>, <0-5>, <0-5>)` | `(fg / bg)_rgb6 <0-5> <0-5> <0-5>`
@@ -138,7 +138,7 @@ It supports basic color, 8-bit and RGB color models as well as various font effe
 
 - **Base format**
 
-  | FG / BF      |  Code            | Python / C / Rust                   | Ocaml                           |
+  | FG / BF      |  Code            | Python / C                    | Ocaml                           |
   |--------------|------------------|-------------------------------------|---------------------------------|
   | Foreground   |  \033[38;r;g;b;m | `fg_rgb(<0-255>, <0-255>, <0-255>)` | `fg_rgb <0-255> <0-255> <0-255>`|
   | Background   |  \033[48;r;g;bm  | `bg_rgb(<0-255>, <0-255>, <0-255>)` | `bg_rgb <0-255> <0-255> <0-255>`| 
@@ -151,7 +151,7 @@ It supports basic color, 8-bit and RGB color models as well as various font effe
      <tr>
         <td style="font-size: 20px; font-weight: bold">  ANSI CODE </td>
         <td style="font-size: 20px; font-weight: bold">  MEANING </td>
-        <td style="font-size: 20px; font-weight: bold">  Python / C / Rust </td>
+        <td style="font-size: 20px; font-weight: bold">  Python / C </td>
         <td style="font-size: 20px; font-weight: bold">  Ocaml </td>
     </tr>
     <tr>
